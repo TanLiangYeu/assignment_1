@@ -74,7 +74,6 @@ class PosterScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // 🔹 Poster 卡片
             Card(
               elevation: 8,
               shape: RoundedRectangleBorder(
@@ -89,9 +88,7 @@ class PosterScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // 🔹 AI 建议显示
             if (decoded.isNotEmpty) ...[
-              // Itinerary
               buildCard(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -109,7 +106,6 @@ class PosterScreen extends StatelessWidget {
                 ),
               ),
 
-              // Estimated Cost
               buildCard(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,7 +123,6 @@ class PosterScreen extends StatelessWidget {
                 ),
               ),
 
-              // Travel Tips
               buildCard(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
